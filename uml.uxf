@@ -1,0 +1,56 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;TimeTask&gt;&gt;
+--
+Date: currentTimeAsDatte
+boolean: stop
+--
+run()
+updateTime()
+stopTask()
+startTask()
+getCurrentTimeAsDate()
+--
+Responsibilities
+-- creats a timer thread</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>290</y><w>210</w><h>340</h></coordinates><panel_attributes>
+&lt;&lt;CarPositionTask&gt;&gt;
+--
+Thread: t
+CarState: currentCarState
+int: currentCarPosition
+int: speedMeterPerSecond
+boolean: stop
+Random: r
+int: id
+--
+run()
+updatePosition()
+stopCar()
+startCar()
+stopTask()
+startTask()
+getCurrentCarPosition()
+getCurrentCarState
+
+--
+Responsibilities
+-- Creates car threads</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>230</y><w>210</w><h>280</h></coordinates><panel_attributes>&lt;&lt;TrafficLightColorTask.&gt;&gt;
+
+--
+Thread: t
+CarPositionTask[]: carsX
+TrafficLightColor: currentTrafficLightColor
+boolean: stop
+int: location
+Random: r
+--
+setCars()
+run()
+changeColor()
+stopTask()
+startTask()
+getCurrentTrafficLightColorAsEnum()
+--
+Responsibilities
+-creats traffic light threads</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>100</y><w>100</w><h>30</h></coordinates><panel_attributes>main_FINAL</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>30</y><w>100</w><h>30</h></coordinates><panel_attributes>JFrame</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>50</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>110</y><w>250</w><h>130</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;110;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>120</y><w>30</w><h>200</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>518</x><y>100</y><w>210</w><h>150</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>190;130;10;10</additional_attributes></element></diagram>
